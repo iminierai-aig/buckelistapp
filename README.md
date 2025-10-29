@@ -1,16 +1,24 @@
-# React + Vite
+# Deploy a Bucket List Tracker Application on AWS Amplify
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Steps To Be Performed
 
-Currently, two official plugins are available:
+Develop a bucket list tracker application in React
+Initialize a Github repository and connect it to your local repository. Host the frontend on Amplify Hosting
+Use Amplify Studio/ Amplify CLI and integrate Amplify Authentication providing user authentication for Login/Signup
+Create a AWS AppSync service for building and managing a GraphQL API, and a GraphQL schema for DynamoDB service integration
+Deploy the backend on AWS Amplify to handle data storage and server-side logic
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Services Used
 
-## React Compiler
+AWS Amplify: Deployment of frontend and backend services.
+AWS AppSync: Simplifies building and managing scalable GraphQL APIs.
+GraphQL API: Allows clients to request only the data they need. [API & Schema]
+DynamoDB: DynamoDB for storing and managing bucket list items.[Database]
+S3 bucket: For storage of user images. [Storage]
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Architectural Diagram
 
-## Expanding the ESLint configuration
+<img width="1607" height="731" alt="image" src="https://github.com/user-attachments/assets/1ecb7824-3146-4ad7-9665-8cf7ae704fae" />
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
